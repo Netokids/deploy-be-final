@@ -20,5 +20,4 @@ type ConsultationResponse struct {
 	Link        string    `json:"link"`
 	DoctorID    int       `json:"doctor_id"`
 	CreatedAt   time.Time `json:"CreatedAt"`
-	UpdateAt    time.Time `json:"UpdateAt"`
 }

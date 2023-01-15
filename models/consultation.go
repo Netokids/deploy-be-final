@@ -23,5 +23,4 @@ type Consultation struct {
 	Link        string       `json:"link" gorm:"type : varchar (255)"`
 
 	CreatedAt time.Time `json:"CreatedAt"`
-	UpdateAt  time.Time `json:"UpdateAt"`
 }
