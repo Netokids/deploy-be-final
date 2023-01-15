@@ -150,7 +150,6 @@ func (h *handlerConsultation) UpdateConsultation(w http.ResponseWriter, r *http.
 		Status:      r.FormValue("status"),
 		Reply:       r.FormValue("reply"),
 		Link:        "https://meet.google.com/new",
-		UpdateAt:    time.Now(),
 	}
 	id, _ := strconv.Atoi(mux.Vars(r)["id"])
 	consultation, err := h.ConsultationRepository.GetConsultation(int(id))
