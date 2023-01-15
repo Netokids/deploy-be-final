@@ -212,9 +212,6 @@ func (h *handlerConsultation) UpdateConsultation(w http.ResponseWriter, r *http.
 	if request.Link != "" {
 		consultation.Link = "https://meet.google.com/new"
 	}
-	if request.UpdateAt != time {
-		consultation.UpdateAt = request.UpdateAt
-	}
 
 	if request.Status == "Waiting Live Consultation" {
 		var CONFIG_SMTP_HOST = "smtp.gmail.com"
